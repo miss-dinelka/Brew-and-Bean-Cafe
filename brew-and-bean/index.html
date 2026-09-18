@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew &amp; Bean Café | Good Coffee. Good Moments.</title>
+  <meta name="description" content="Brew & Bean Café — freshly brewed coffee, quality ingredients, and a cozy atmosphere in the heart of Colombo." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header" id="header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#home" class="nav-logo">
+        <i class="fa-solid fa-mug-saucer" aria-hidden="true"></i>
+        <span>Brew &amp; Bean</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#specialties" class="nav-link">Specialties</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Welcome to Brew &amp; Bean</p>
+          <h1 class="hero-heading">Good Coffee.<br />Good Moments.</h1>
+          <p class="hero-desc">
+            Every cup starts with freshly roasted beans, carefully sourced ingredients, and a
+            small team that genuinely loves what they make. Brew &amp; Bean is a place to slow
+            down, catch up with a friend, or simply enjoy a quiet moment with a coffee that
+            tastes like it was made just for you.
+          </p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">Explore Menu</a>
+            <a href="#contact" class="btn btn-secondary">Visit Us</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=900&q=80"
+            alt="Barista pouring latte art into a cup of coffee"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+      <div class="section-container about-grid">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+            alt="Interior of Brew and Bean Café with wooden tables and warm lighting"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-content">
+          <h2 class="section-heading">Our Story</h2>
+          <p>
+            Brew &amp; Bean began as a small counter with three tables and one espresso machine.
+            Today, it has grown into a neighbourhood favourite, but the heart of it hasn't
+            changed — we still roast in small batches and pull every shot by hand.
+          </p>
+          <p>
+            We work directly with growers who share our standards for quality, and we taste
+            every new batch before it ever reaches your cup. Good coffee takes patience, and
+            we're happy to take the time.
+          </p>
+          <p>
+            Whether you're stopping in for a quick espresso or settling in with a book for the
+            afternoon, our doors — and our coffee — are always ready for you.
+          </p>
+          <a href="#menu" class="btn btn-outline">Learn More</a>
+
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years of Passion</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Coffee Varieties</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10K+</span>
+              <span class="stat-label">Happy Customers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MENU SECTION ===== -->
+    <section class="menu" id="menu">
+      <div class="section-container">
+        <h2 class="section-heading center">Our Menu</h2>
+        <p class="section-subtext center">Freshly made, every single day.</p>
+
+        <div class="menu-filters" role="tablist" aria-label="Menu categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="coffee" role="tab" aria-selected="false">Coffee</button>
+          <button class="filter-btn" data-filter="tea" role="tab" aria-selected="false">Tea</button>
+          <button class="filter-btn" data-filter="pastries" role="tab" aria-selected="false">Pastries</button>
+          <button class="filter-btn" data-filter="desserts" role="tab" aria-selected="false">Desserts</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+
+          <article class="menu-item" data-category="coffee">
+            <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=500&q=80" alt="Espresso in a small white cup" loading="lazy" />
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Espresso</h3>
+                <span class="price">$3.50</span>
+              </div>
+              <p>A bold, concentrated shot with a rich crema on top.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="coffee">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=500&q=80" alt="Cappuccino with foam art" loading="lazy" />
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Cappuccino</h3>
+                <span class="price">$4.50</span>
+              </div>
+              <p>Espresso topped with steamed milk and a thick layer of foam.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="coffee">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=500&q=80" alt="Café latte with heart-shaped latte art" loading="lazy" />
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Café Latte</h3>
+                <span class="price">$4.75</span>
+              </div>
+              <p>Smooth espresso balanced with generous steamed milk.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="coffee">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=500&q=80" alt="Chocolate mocha coffee drink" loading="lazy" />
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Mocha</h3>
+                <span class="price">$5.00</span>
+              </div>
+              <p>Espresso and steamed milk with rich chocolate and whipped cream.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="coffee">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=500&q=80" alt="Glass of iced coffee with milk" loading="lazy" />
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Iced Coffee</h3>
+                <span class="price">$4.25</span>
+              </div>
+              <p>Chilled and refreshing, brewed strong and served over ice.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="tea">
+            <img src="https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?auto=format&fit=crop&w=500&q=80" alt="Cup of green tea" loading="lazy" />
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Green Tea</h3>
+                <span class="price">$3.00</span>
+              </div>
+              <p>Light, grassy, and gently steeped for a clean finish.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="tea">
+            <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=500&q=80" alt="Cup of spiced masala tea" loading="lazy" />
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Masala Tea</h3>
+                <span class="price">$3.50</span>
+              </div>
+              <p>Black tea simmered with warm spices and milk.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="pastries">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=80" alt="Golden butter croissant" loading="lazy" />
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Butter Croissant</h3>
+                <span class="price">$3.25</span>
+              </div>
+              <p>Flaky, buttery, and baked fresh every morning.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="pastries">
+            <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=500&q=80" alt="Blueberry muffin" loading="lazy" />
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Blueberry Muffin</h3>
+                <span class="price">$3.50</span>
+              </div>
+              <p>Soft and moist, packed with juicy blueberries.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="Slice of chocolate cake" loading="lazy" />
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Chocolate Cake</h3>
+                <span class="price">$5.50</span>
+              </div>
+              <p>Rich, moist layers with smooth chocolate ganache.</p>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1524351199678-941a58a3df50?auto=format&fit=crop&w=500&q=80" alt="Slice of creamy cheesecake" loading="lazy" />
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <h3>Cheesecake</h3>
+                <span class="price">$5.75</span>
+              </div>
+              <p>Creamy and smooth over a buttery biscuit base.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPECIALTIES SECTION ===== -->
+    <section class="specialties" id="specialties">
+      <div class="section-container">
+        <h2 class="section-heading center">Our Specialties</h2>
+        <p class="section-subtext center">The drinks our regulars keep coming back for.</p>
+
+        <div class="specialties-grid">
+          <article class="specialty-card">
+            <span class="badge">Popular</span>
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=700&q=80" alt="Caramel latte with drizzle" loading="lazy" />
+            <div class="specialty-info">
+              <h3>Caramel Latte</h3>
+              <p>Espresso, steamed milk, and a swirl of house-made caramel.</p>
+              <span class="price">$5.25</span>
+            </div>
+          </article>
+
+          <article class="specialty-card">
+            <span class="badge">Popular</span>
+            <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=700&q=80" alt="Signature mocha topped with cream" loading="lazy" />
+            <div class="specialty-info">
+              <h3>Signature Mocha</h3>
+              <p>Our house blend of dark chocolate, espresso, and steamed milk.</p>
+              <span class="price">$5.50</span>
+            </div>
+          </article>
+
+          <article class="specialty-card">
+            <span class="badge">Popular</span>
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80" alt="Berry cheesecake slice with fresh berries" loading="lazy" />
+            <div class="specialty-info">
+              <h3>Berry Cheesecake</h3>
+              <p>Classic cheesecake topped with a warm mixed berry compote.</p>
+              <span class="price">$6.00</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US SECTION ===== -->
+    <section class="why-us" id="why-us">
+      <div class="section-container">
+        <h2 class="section-heading center">Why Choose Us</h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fa-solid fa-seedling feature-icon" aria-hidden="true"></i>
+            <h3>Freshly Roasted</h3>
+            <p>Freshly roasted quality coffee beans, delivered in small batches.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-leaf feature-icon" aria-hidden="true"></i>
+            <h3>Quality Ingredients</h3>
+            <p>Carefully selected ingredients sourced from trusted suppliers.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-couch feature-icon" aria-hidden="true"></i>
+            <h3>Cozy Atmosphere</h3>
+            <p>A comfortable place to relax, focus, and connect with others.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-heart feature-icon" aria-hidden="true"></i>
+            <h3>Friendly Service</h3>
+            <p>Warm, welcoming, and attentive service on every visit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials" id="testimonials">
+      <div class="section-container">
+        <h2 class="section-heading center">What Our Customers Say</h2>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"The best latte I've had in Colombo. The staff always remembers my order, which makes the visit feel personal."</p>
+            <p class="testimonial-name">— Amaya Perera</p>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Cozy spot with great pastries. I come here every weekend to work on my laptop with a cup of their signature mocha."</p>
+            <p class="testimonial-name">— Dinuka Silva</p>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="4 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Lovely atmosphere and friendly staff. The berry cheesecake is worth the visit on its own."</p>
+            <p class="testimonial-name">— Nethmi Fernando</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact">
+      <div class="section-container contact-grid">
+        <div class="contact-info">
+          <h2 class="section-heading">Get In Touch</h2>
+
+          <div class="info-block">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <div>
+              <h3>Address</h3>
+              <p>123 Coffee Street<br />Colombo, Sri Lanka</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+94112345678">+94 11 234 5678</a></p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:hello@brewandbean.com">hello@brewandbean.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+            <div>
+              <h3>Opening Hours</h3>
+              <p>Monday – Friday: 7:00 AM – 8:00 PM<br />Saturday – Sunday: 8:00 AM – 9:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Your name" />
+              <span class="error-message" id="fullNameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What is this about?" />
+              <span class="error-message" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+
+            <p class="form-success" id="formSuccess" role="status">
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              Thank you! Your message has been sent successfully.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="section-container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo footer-logo">
+          <i class="fa-solid fa-mug-saucer" aria-hidden="true"></i>
+          <span>Brew &amp; Bean</span>
+        </a>
+        <p>Good coffee. Good moments.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specialties">Specialties</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>123 Coffee Street, Colombo, Sri Lanka</p>
+        <p>+94 11 234 5678</p>
+        <p>hello@brewandbean.com</p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Brew &amp; Bean Café. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP BUTTON ===== -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
